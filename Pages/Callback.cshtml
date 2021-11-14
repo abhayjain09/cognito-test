@@ -1,0 +1,33 @@
+﻿@page
+@model APSSAMCognito.Web.Pages.CallbackModel
+@{
+    ViewData["Title"] = "Callback";
+}
+
+<h2>Tokens</h2>
+<div class="form-inline center">
+    <div class="col-md-12 form-group" style="padding: 20px;">
+        <label class="col-sm-2 col-form-label" style="font-weight: bold;">idToken</label>
+        <p>
+            <textarea style="width: 100%; height: 170px" rows="50" cols="100" id="txtIdToken">@Model.IdToken</textarea>
+        </p>
+        <!--
+        <input type="text" class="form-control" size="50" id="txtIdToken" style="height: 100px;" />
+        -->
+    </div>
+    <div class="col-md-12 form-group" style="padding: 20px;">
+        <label class="col-sm-2 col-form-label" style="font-weight: bold;">accessToken</label>
+        <p>
+            <textarea style="width: 100%; height: 170px" rows="50" cols="100" id="txtAccessToken">@Model.AccessToken</textarea>
+        </p>
+    </div>
+    <div class="col-md-12 form-group" style="padding: 20px;">
+        <label class="col-sm-2 col-form-label" style="font-weight: bold;">refreshToken</label>
+        <p>
+            <textarea style="width: 100%; height: 170px" rows="50" cols="100" id="txtRefreshToken">@Model.RefreshToken</textarea>
+        </p>
+    </div>
+</div>
+
+
+
